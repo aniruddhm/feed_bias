@@ -1,20 +1,41 @@
 {
-  "name": "newsline",
-  "version": "0.1.0",
+  "name": "FEEDBIAS",
+  "version": "0.0.3",
+  "license": "PRIVATE",
+  "scripts": {
+    "ng": "ng",
+    "start": "node server.js",
+    "build": "ng build --prod",
+    "test": "node test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
   "private": true,
+  "dpdInclude": [
+    "deployd",
+    "dpd-clientlib",
+    "dpd-dashboard",
+    "dpd-email",
+    "dpd-event",
+    "dpd-fileupload",
+    "dpd-passport",
+    "dpd-swagger-doc",
+    "dpd-event-extension"
+  ],
   "dependencies": {
     "@google-cloud/language": "^1.2.0",
-    "d3": "^5.5.0",
-    "material-components-web": "^0.38.0",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-horizontal-timeline": "^1.5.3",
-    "react-scripts": "1.1.4"
+    "@google-cloud/storage": "^1.7.0",
+    "deployd": "^1.1.1",
+    "dpd-email": "^0.1.0",
+    "dpd-event": "^1.1.1",
+    "dpd-event-extension": "0.0.3",
+    "dpd-fileupload": "^0.0.17",
+    "dpd-passport": "^0.3.4",
+    "dpd-swagger-doc": "^1.1.11",
+    "ejs": "^2.5.7"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "dpd-clientlib": "^1.0.0",
+    "dpd-dashboard": "^1.1.3"
   }
 }
